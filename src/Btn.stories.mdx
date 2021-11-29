@@ -1,0 +1,139 @@
+import { Meta, Story, Canvas, ArgsTable, Source } from "@storybook/addon-docs";
+
+import Button, { buttonStyle } from "./Button";
+import { H3 } from "./Text";
+
+<Meta
+  title="Design System/Btn"
+  component={Button}
+  argTypes={{
+    primary: {
+      control: "boolean",
+      description:
+        "Displays the primary button",
+      table: {
+        type: { summary: "boolean" },
+        defaultValue: { summary: true },
+      },
+    },
+    secondary: {
+          control: "boolean",
+          description:
+            "Displays the secondary button",
+          table: {
+            type: { summary: "boolean" },
+            defaultValue: { summary: false },
+          },
+        },
+    disabled: {
+              control: "boolean",
+              description:
+                "Displays the disabled state",
+              table: {
+                type: { summary: "boolean" },
+                defaultValue: { summary: false },
+              },
+            },
+    text: {
+    control: "input",
+        description: "The URL of the Avatar's image.",
+              table: {
+                defaultValue: {
+                  summary: "This is a Button",
+                },
+              },}
+  }}
+/>
+
+# CTA Button
+
+CTA buttons are used when the button performs an action. The Primary variant should only be used once per screen,
+to ensure that the user’s attention is not diverted. For less important, or secondary, actions the Ghost variant can be
+used. If a desctructive action is needed, such as skipping a screen or cancelling out of a flow, it is recommend to use
+a text link to ensure attention is on the primary action. Never use the Ghost variant for a desctructive action.
+
+export const Template = (args) => <Button {...args}>{args.text}</Button>;
+
+<Canvas>
+<Story
+  name="Primary"
+  args={{
+    primary: true,
+    secondary: false,
+    disabled: false,
+    text: "I am a button"
+  }}
+  parameters={{
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/Sq5aDw7BRwjXfu9Shb5TVR/Update-design-system?node-id=0%3A151'
+    },
+    code: {
+    }
+  }}
+>
+  {Template.bind({})}
+</Story>
+</Canvas>
+
+<ArgsTable story="Primary" />
+
+### Primary
+Supported states for primary buttons are active and disabled
+
+<Story name="Primary states"
+    parameters={{
+        design: {
+          type: 'figma',
+          url: 'https://www.figma.com/file/Sq5aDw7BRwjXfu9Shb5TVR/Update-design-system?node-id=0%3A151'
+        }
+      }}
+>
+  <div>
+   <Button
+     primary
+     style={{ margin: 40}}
+   >
+    I am a button
+   </Button>
+   <Button
+        primary
+        disabled
+        style={{ margin: 40}}
+      >
+       I am a button
+      </Button>
+  </div>
+</Story>
+
+### Secondary
+
+Supported states for secondary buttons are active and disabled
+
+<Story name="Secondary states"
+    parameters={{
+           design: {
+             type: 'figma',
+             url: 'https://www.figma.com/file/Sq5aDw7BRwjXfu9Shb5TVR/Update-design-system?node-id=0%3A169'
+           }
+         }} >
+  <div>
+   <Button
+   style={{ margin: 40}}
+       secondary
+   >
+    I am a button
+   </Button>
+   <Button
+   style={{ margin: 40 }}
+        secondary
+        disabled
+      >
+       I am a button
+      </Button>
+  </div>
+  <div>
+  </div>
+</Story>
+
+This is all extensible so we can really do what we want here.

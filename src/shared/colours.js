@@ -1,0 +1,59 @@
+// The below colours are taken directly from the design system and should not be modified/removed
+// https://share.goabstract.com/4cbf9eea-1f26-4e5e-b24f-256779badd9d?mode=design&sha=9c17c81605eac7fb6e75d7fbbf6a913a14330564
+export const white = "#ffffff";
+export const visualPurple = "#62259d";
+export const visualPurple50 = "#B092CE";
+export const saffronOrange = "#ff963b";
+export const saffronOrange50 = "#ffca9d";
+export const saffronOrangeBackground = "#fff7f0";
+export const midnightTeal = "#003d51";
+export const midnightTeal50 = "#7F9EA8";
+export const middleBlue = "#6ad1e3";
+export const middleBlue50 = "#B4E8F1";
+export const mediumGrey = "#bdc5c2";
+export const mediumGrey40 = "#e5e8e7";
+export const mediumGrey50 = "#dee2e1";
+export const mediumDarkGrey = "#858585";
+export const mediumDarkGrey20 = "#e7e7e7";
+export const mediumDarkGrey40 = "#cecece";
+export const lightGrey = "#ededed";
+export const lightGrey20 = "#fbfbfb";
+export const lightGrey30 = "#fafafa";
+export const lightGrey40 = "#f8f8f8";
+export const jellyRed = "#E4281B";
+export const jellyRed50 = "#F1938D";
+export const jellyRedBackground = "#FEF0EF";
+export const extraLightGrey = "#f8f8f8";
+export const eagleTeal = "#004d71";
+export const eagleTeal50 = "#7FA6B8";
+export const eagleTealBackground = "#ebf1f4";
+export const darkRed = "#a22929";
+export const darkRed50 = "#D09494";
+export const darkRedBackground = "#faf4f4";
+export const darkPurple = "#3d0f50";
+export const darkPurple50 = "#9E87A7";
+export const darkPurpleBackground = "#EBE7ED";
+export const darkGrey = "#4e5758";
+export const darkGrey20 = "#dcddde";
+export const darkGrey54 = "#9fa4a5";
+export const darkGrey87 = "#656d6e";
+export const darkGreyDisabled = "#7B8081";
+export const darkCitrusGreen = "#bbbb14";
+export const darkCitrusGreen50 = "#DDDD89";
+export const coalBlack = "#262829";
+export const coalBlack17 = "#dadadb";
+export const coalBlack26 = "#c7c7c7";
+export const coalBlack50 = "#939494";
+export const coalBlack87 = "#424445";
+export const coalBlack95 = "#313334";
+export const citrusGreen = "#cedc00";
+export const citrusGreen50 = "#E3EA7C";
+export const cashGreen = "#00857A";
+export const cashGreen50 = "#7FC2BC";
+export const cashGreenBackground = "#E5F2F1";
+export const shadow = "rgba(38, 40, 41, 0.17)";
+
+// TODO these toggle colours are taken from Abstract but aren't in the design system.
+// They're also only applicable for the default jelly red toggle colour (which can be overridden)
+export const disabledToggleChannel = "#f6c0c0";
+export const disabledToggleKnob = "#f1938c";
